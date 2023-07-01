@@ -226,16 +226,16 @@ book. Sorry.
 </aside>
 
 ```ebnf
-breakfast  → protein "with" breakfast "on the side" ;
+breakfast  → protein " with " breakfast " on the side" ;
 breakfast  → protein ;
 breakfast  → bread ;
 
-protein    → crispiness "crispy" "bacon" ;
+protein    → extra "crispy bacon" ;
 protein    → "sausage" ;
-protein    → cooked "eggs" ;
+protein    → cooked " eggs" ;
 
-crispiness → "really" ;
-crispiness → "really" crispiness ;
+extra → "really " ;
+extra → "really " extra ;
 
 cooked     → "scrambled" ;
 cooked     → "poached" ;
@@ -337,7 +337,7 @@ allow a few other kinds of expressions in the body of a rule:
     more times.
 
     ```ebnf
-    crispiness → "really" "really"* ;
+    extra → "really" "really"* ;
     ```
 
 <aside name="purity">
@@ -352,7 +352,7 @@ recursion.
     at least once.
 
     ```ebnf
-    crispiness → "really"+ ;
+    extra → "really"+ ;
     ```
 
 *   A postfix `?` is for an optional production. The thing before it can appear
